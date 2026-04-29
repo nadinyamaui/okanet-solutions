@@ -485,7 +485,7 @@
             </div>
             <div class="mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
                 <p class="text-gray-600 text-xs">&copy; {{ date('Y') }} Okanet Solutions C.A. Todos los derechos reservados.</p>
-                <p class="text-gray-600 text-xs">Av. Romulo Gallegos, Torre C del Centro ALOA, Piso 2 — Caracas, Venezuela</p>
+                <p class="text-gray-600 text-xs">Av. Romulo Gallegos con Calle Pedro Manrique, Edif. Conjunto Residencial Comercial Centro ALOA, Piso PP, Local PP-36-L, 1071 Caracas, Venezuela</p>
             </div>
         </div>
     </footer>
