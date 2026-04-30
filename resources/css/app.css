@@ -6,6 +6,54 @@
 @source '../**/*.js';
 
 @theme {
-    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+    --color-bone: #f5f0e8;
+    --color-cream: #ebe3d2;
+    --color-paper: #faf6ef;
+    --color-espresso: #1c1814;
+    --color-umber: #3d362e;
+    --color-greige: #7a6f60;
+    --color-stone: #a89d8c;
+    --color-terracotta: #b8532a;
+    --color-terracotta-dark: #9c4422;
+    --color-terracotta-soft: #d97a4a;
+    --color-emerald-deep: #0d4c3c;
+    --color-emerald-soft: #2e6a58;
+    --color-ochre: #c97b2b;
+    --color-ink: #0f0d0a;
+}
+
+@layer base {
+    body {
+        font-feature-settings: 'ss01', 'cv11';
+    }
+
+    .font-display {
+        font-feature-settings: 'ss01';
+        letter-spacing: -0.02em;
+    }
+}
+
+@layer utilities {
+    .grain {
+        background-image:
+            radial-gradient(circle at 1px 1px, rgba(28, 24, 20, 0.07) 1px, transparent 0);
+        background-size: 24px 24px;
+    }
+
+    .hairline {
+        background-image: linear-gradient(to right, transparent, rgba(28, 24, 20, 0.18) 30%, rgba(28, 24, 20, 0.18) 70%, transparent);
+    }
+
+    .marquee-track {
+        animation: marquee 40s linear infinite;
+    }
+
+    @keyframes marquee {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
+    }
 }
